@@ -6,6 +6,12 @@
      }
      
  function change() {     
-  var x = document.getElementById("H1").innerHTML = "CSIE@CGU";
-     var y = document.getElementById("P").innerHTML = "怎麼那麼棒！！";
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#H1").text("CSIE@CGU");
+        });
+        $("button").click(function(){
+            $("#P").text("怎麼那麼棒！！");
+        });
+    });
  }   
