@@ -1,6 +1,11 @@
-function change() {     
-		var header = document.getElementById("H1");     
-		header.innerHTML = "CSIE@CGU";
-		var para = document.getElementById("P");
-		para.innerHTML = "怎麼那麼棒！！.";   
-		}
+    function myFunction() {   
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML = "Change this document";
+        document.body.appendChild(btn); 
+        btn.addEventListener("click",change);
+     }
+     
+ function change() {     
+  var x = document.getElementById("H1").innerHTML = "CSIE@CGU";
+     var y = document.getElementById("P").innerHTML = "怎麼那麼棒！！";
+ }   
